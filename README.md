@@ -81,11 +81,11 @@ footer {
     <header>
         <nav>
             <ul>
-                <li><a href="C:\Users\harsh\project1.html">Home</a></li>
-                <li><a href="C:\Users\harsh\About.html">About</a></li>
+                <li><a href="project1.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
                 <!-- <li><a href="#">Services</a></li> -->
-                <li><a href="C:\Users\harsh\Portfolio.html">Portfolio</a></li>
-                <li><a href="C:\Users\harsh\Contact Details.html">Contact</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="Contact Details.html">Contact</a></li>
             </ul>
         </nav>
     </header>
