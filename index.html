@@ -85,7 +85,7 @@ footer {
                 <li><a href="About.html">About</a></li>
                 <!-- <li><a href="#">Services</a></li> -->
                 <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Contact Details.html">Contact</a></li>
+                <li><a href="Contact_Details.html">Contact</a></li>
             </ul>
         </nav>
     </header>
