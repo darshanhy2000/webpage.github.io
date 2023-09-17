@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Details</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <style>/* styles.css */
         body {
@@ -12,7 +12,7 @@
             padding: 0;
             background-color: #f0f0f0;
         }
-
+        
 
         header {
     background-color: #333;
@@ -29,20 +29,44 @@ nav ul li {
     display: inline;
     margin: 0 15px;
 }
-        
-        .contact-container {
-            background-color: #fff;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
         }
         
         h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        main {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        h2 {
             font-size: 24px;
             color: #333;
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
         
         p {
@@ -50,98 +74,51 @@ nav ul li {
             color: #555;
         }
         
-        .contact-info {
-            margin-top: 20px;
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
         }
-        
-        .info-item {
-            margin-bottom: 10px;
-        }
-        
-        h2 {
-            font-size: 18px;
-            color: #333;
-        }
-        
-        a {
-            color: #0078d4;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-
-        
         </style>
-
-<header>
+        <header>
     <nav>
         <ul>
-            <li><a href="house desgn.html">Home</a></li>
-            <li><a href="About.html">About</a></li>
+            <li><a href="C:\Users\harsh\house desgn.html">Home</a></li>
+            <li><a href="C:\Users\harsh\About.html">About</a></li>
             <!-- <li><a href="#">Services</a></li> -->
-            <li><a href="Portfolio.html">Portfolio</a></li>
-            <!-- <li><a href="C:\Users\harsh\Contact Details.html">Contact</a></li> -->
+            <!-- <li><a href="C:\Users\harsh\Portfolio.html">Portfolio</a></li> -->
+            <li><a href="C:\Users\harsh\Contact Details.html">Contact</a></li>
         </ul>
     </nav>
 </header>
-
-
 <body>
-    <div class="contact-container">
-        <h1>Contact Details<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Details</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="contact-container">
-        <h1>Contact Details</h1>
-        <p>Feel free to reach out to us for any inquiries or assistance:</p>
-        
-        <div class="contact-info">
-            <div class="info-item">
-                <h2>Email:</h2>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h2>Phone:</h2>
-                <p><a href="tel:+123456789">+91 733225436</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h2>Address:</h2>
-                <p>123 Main Street, City, Country</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
-</h1>
-        <p>Feel free to reach out to us for any inquiries or assistance:</p>
-        
-        <div class="contact-info">
-            <div class="info-item">
-                <h2>Email:</h2>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h2>Phone:</h2>
-                <p><a href="tel:+123456789">+1 (234) 567-89</a></p>
-            </div>
-            
-            <div class="info-item">
-                <h2>Address:</h2>
-                <p>123 Main Street, City, Country</p>
-            </div>
-        </div>
-    </div>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+
+    <main>
+        <section class="project">
+            <img src="C:\Users\harsh\Downloads\iamge.jpg" alt="Project 1">
+            <h2>Project 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+
+        <section class="project">
+            <img src="C:\Users\harsh\Downloads\iamge.jpg" alt="Project 2">
+            <h2>Project 2</h2>
+            <p>Nulla vitae elit libero, a pharetra augue.</p>
+        </section>
+
+        <section class="project">
+            <img src="C:\Users\harsh\Downloads\iamge.jpg" alt="Project 3">
+            <h2>Project 3</h2>
+            <p>Sed posuere consectetur est at lobortis.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Darshan</p>
+    </footer>
 </body>
 </html>
