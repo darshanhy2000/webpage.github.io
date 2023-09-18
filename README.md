@@ -1,120 +1,96 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Home Page</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #947f7f;
-}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+        .login-container {
+            background-color: #914343;
+            padding: 28px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
 
-nav ul {
-    list-style-type: none;
-}
+        .login-container h2 {
+            color: #333;
+        }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
+        .login-form {
+            margin-top: 20px;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
+        .login-form label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+        }
 
-main {
-    padding: 20px;
-}
+        .login-form input[type="text"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
 
-.hero {
-    background-image: url('hero-image.jpg'); /* Add an attractive background image */
-    background-size: cover;
-    text-align: center;
-    padding: 100px 0;
-    color: #fff;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.features {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0;
-}
-
-.feature {
-    flex-basis: 30%;
-    text-align: center;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
+        .login-form button {
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="project1.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <!-- <li><a href="#">Services</a></li> -->
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Contact_Details.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form class="login-form" id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="registration.html">Create Account</a></p>
+    </div>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome to Our Website</h1>
-            <p>Your one-stop destination for all your needs.</p>
-            <a href="#" class="cta-button">Learn More</a>
-        </section>
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function (e) {
+            e.preventDefault();
 
-        <section class="features">
-            <div class="feature">
-                <h2>Quality Products</h2>
-                <p>We offer the finest products to our customers.</p>
-            </div>
-            <div class="feature">
-                <h2>Expert Services</h2>
-                <p>Our team of experts is ready to assist you.</p>
-            </div>
-            <div class="feature">
-                <h2>Customer Satisfaction</h2>
-                <p>Your satisfaction is our top priority.</p>
-            </div>
-        </section>
-    </main>
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
 
-    <footer>
-        <p>&copy; 2023 Your Company Name</p>
-    </footer>
+            // Replace with your actual login logic
+            if (username === "darshan" && password === "7338541530") {
+                window.location.href = "index.html"; // Adjust the URL as needed
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
 </body>
 </html>
+
+
